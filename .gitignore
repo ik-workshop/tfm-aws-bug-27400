@@ -101,3 +101,5 @@ terragrunt-debug.tfvars.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,homebrew,visualstudiocode,terraform,terragrunt
+
+.terraform.lock.hcl
