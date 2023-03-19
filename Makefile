@@ -13,3 +13,16 @@ hooks: ## install pre commit.
 
 validate: ## Validate files with pre-commit hooks
 	@pre-commit run --all-files
+
+cleanup: ## Cleanup project. Remove Terraform and Terragrunt leftovers
+	@find . -type d -name ".terragrunt-cache" -prune -exec rm -rf {} \;
+	@find . -type f -name ".terraform.lock.hcl" -prune -exec rm  {} \;
+
+plan: ## Terraform plan stack
+	@terragrunt plan
+
+destroy: ## Terraform destroy stack
+	@terragrunt destroy
+
+apply: ## Terraform apply stack
+	@terragrunt apply
