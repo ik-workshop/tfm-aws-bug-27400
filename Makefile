@@ -18,6 +18,9 @@ cleanup: ## Cleanup project. Remove Terraform and Terragrunt leftovers
 	@find . -type d -name ".terragrunt-cache" -prune -exec rm -rf {} \;
 	@find . -type f -name ".terraform.lock.hcl" -prune -exec rm  {} \;
 
+init: ## Terraform plan stack
+	@terragrunt init
+
 plan: ## Terraform plan stack
 	@terragrunt plan
 

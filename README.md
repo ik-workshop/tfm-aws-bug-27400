@@ -21,6 +21,7 @@
 ## Contents
 
 - [Create](#create)
+- [Docs](#docs)
 - [Resources](#resources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -30,6 +31,10 @@
 ## Create
 
 [**Create a repository using this template →**][template.generate]
+
+## Docs
+
+- [Provider installation](https://developer.hashicorp.com/terraform/cli/config/config-file#provider-installation)
 
 ## Resources
 

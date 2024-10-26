@@ -14,7 +14,8 @@ terraform {
   source = "stack"
 }
 
-terraform_binary = "tofu"
+# terraform_binary = "tofu"
+terraform_binary = "terraform"
 
 # inputs = merge(
 #   {
