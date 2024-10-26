@@ -14,6 +14,8 @@ terraform {
   source = "stack"
 }
 
+terraform_binary = "tofu"
+
 # inputs = merge(
 #   {
 #     project_name = "webhook-paas-1386"
