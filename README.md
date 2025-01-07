@@ -22,6 +22,7 @@
 
 - [Create](#create)
 - [Docs](#docs)
+- [Env vars](#env-vars)
 - [Resources](#resources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -35,6 +36,15 @@
 ## Docs
 
 - [Provider installation](https://developer.hashicorp.com/terraform/cli/config/config-file#provider-installation)
+- [Build provider debugging](https://discuss.hashicorp.com/t/terraform-provider-plugin-tutorial-invalid-data-source/62750/3)
+- [Build hello world provider](https://developer.hashicorp.com/terraform/tutorials/providers-plugin-framework/providers-plugin-framework-provider-configure#implement-temporary-data-source)
+- [Providers config](https://opentofu.org/docs/language/providers/configuration/)
+
+## Env vars
+
+```sh
+TF_LOG=DEBUG
+```
 
 ## Resources
 
@@ -47,3 +57,5 @@
 
 [governance.link-checker.badge]: https://github.com/ik-workshop/workshop-blueprint/actions/workflows/governance.links-checker.yml/badge.svg
 [governance.link-checker.status]: https://github.com/ik-workshop/workshop-blueprint/actions/workflows/governance.links-checker.yml
+
+ aws s3api get-bucket-policy --bucket terraform-provider-aws-issues-27400
