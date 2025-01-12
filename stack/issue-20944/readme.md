@@ -11,6 +11,7 @@
 > Issue with redshift cluster paused. But the cluster mod is changing.
 
 - [issue link](https://github.com/hashicorp/terraform-provider-aws/issues/20944)
+- [aws sdk](https://docs.aws.amazon.com/cli/latest/reference/redshift/create-cluster-snapshot.html)
 
 ## Documentation
 
