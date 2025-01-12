@@ -1,0 +1,70 @@
+{
+  "Cluster": {
+    "ClusterIdentifier": "tf-redshift-cluster",
+    "NodeType": "dc2.large",
+    "ClusterStatus": "pausing",
+    "ClusterAvailabilityStatus": "Modifying",
+    "MasterUsername": "foo",
+    "DBName": "mydb",
+    "Endpoint": {
+      "Address": "tf-redshift-cluster.xxxxxxxx.eu-west-1.redshift.amazonaws.com",
+      "Port": 5439
+    },
+    "ClusterCreateTime": "2025-01-12T14:59:02.581000+00:00",
+    "AutomatedSnapshotRetentionPeriod": 1,
+    "ManualSnapshotRetentionPeriod": -1,
+    "ClusterSecurityGroups": [],
+    "VpcSecurityGroups": [
+      {
+        "VpcSecurityGroupId": "sg-xxxxxx",
+        "Status": "active"
+      }
+    ],
+    "ClusterParameterGroups": [
+      {
+        "ParameterGroupName": "default.redshift-1.0",
+        "ParameterApplyStatus": "in-sync"
+      }
+    ],
+    "ClusterSubnetGroupName": "default",
+    "VpcId": "vpc-xxxxxxxx",
+    "AvailabilityZone": "eu-west-1b",
+    "PreferredMaintenanceWindow": "mon:23:30-tue:00:00",
+    "PendingModifiedValues": {},
+    "ClusterVersion": "1.0",
+    "AllowVersionUpgrade": true,
+    "NumberOfNodes": 2,
+    "PubliclyAccessible": true,
+    "Encrypted": false,
+    "Tags": [
+      {
+        "Key": "owner",
+        "Value": "ik"
+      },
+      {
+        "Key": "issue",
+        "Value": "https://github.com/hashicorp/terraform-provider-aws/issues/issue-20944"
+      },
+      {
+        "Key": "source",
+        "Value": "https://github.com/ik-workshop/tfm-aws-provider-issues/stack/issue-20944"
+      },
+      {
+        "Key": "env",
+        "Value": "sandbox"
+      }
+    ],
+    "EnhancedVpcRouting": false,
+    "IamRoles": [],
+    "MaintenanceTrackName": "current",
+    "DeferredMaintenanceWindows": [],
+    "NextMaintenanceWindowStartTime": "2025-01-13T23:30:00+00:00",
+    "ClusterNamespaceArn": "arn:aws:redshift:eu-west-1:xxxxxxxxxxxxxx:namespace:xxxxxxxxxxxxxxx",
+    "TotalStorageCapacityInMegaBytes": 800000,
+    "AquaConfiguration": {
+      "AquaStatus": "disabled",
+      "AquaConfigurationStatus": "auto"
+    },
+    "MultiAZ": "Disabled"
+  }
+}

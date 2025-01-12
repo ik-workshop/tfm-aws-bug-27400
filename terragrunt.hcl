@@ -7,11 +7,13 @@ locals {
 generate "provider" {
   path      = "provider.tf"
   if_exists = "overwrite_terragrunt"
-  contents  = strcontains(local.stack_name, "issue-") ? file("${get_parent_terragrunt_dir()}/templates/aws.hcl") : ""
+  contents  = strcontains(local.stack_name, "issue-") ? templatefile("${get_parent_terragrunt_dir()}/templates/aws.hcl", {
+    issue = local.stack_name
+  }) : ""
 }
 
 terraform {
-  source = "stack/${local.stack_name}"
+  source = "stack//${local.stack_name}"
 }
 
 terraform_binary = "tofu"

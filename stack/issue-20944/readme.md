@@ -11,3 +11,16 @@
 > Issue with redshift cluster paused. But the cluster mod is changing.
 
 - [issue link](https://github.com/hashicorp/terraform-provider-aws/issues/20944)
+
+## Documentation
+
+## Commands
+
+```sh
+aws redshift describe-clusters --cluster-identifier tf-redshift-cluster
+aws redshift pause-cluster --cluster-identifier tf-redshift-cluster
+aws redshift resume-cluster --cluster-identifier tf-redshift-cluster
+
+aws redshift create-cluster-snapshot --cluster-identifier tf-redshift-cluster --snapshot-identifier tf-issue-20944
+
+```
