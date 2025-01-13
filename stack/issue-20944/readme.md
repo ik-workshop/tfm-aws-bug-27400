@@ -23,5 +23,27 @@ aws redshift pause-cluster --cluster-identifier tf-redshift-cluster
 aws redshift resume-cluster --cluster-identifier tf-redshift-cluster
 
 aws redshift create-cluster-snapshot --cluster-identifier tf-redshift-cluster --snapshot-identifier tf-issue-20944
+aws redshift delete-cluster --cluster-identifier tf-redshift-cluster
+
+aws redshift create-cluster-snapshot --cluster-identifier tf-acc-test-xxxx --snapshot-identifier tf-issue727999
+aws redshift delete-cluster --skip-final-cluster-snapshot --cluster-identifier tf-acc-test-xxxx
 
 ```
+
+Run tests
+
+```sh
+export AWS_REGION=eu-west-1
+export AWS_DEFAULT_REGION=$AWS_REGION
+make testacc TESTS=TestAccRedshiftCluster_basic PKG=redshift
+
+make testacc PKG=redshift ACCTEST_PARALLELISM=
+make testacc TESTS=TestAccRedshiftCluster_pause PKG=redshift
+make testacc TESTS=TestAccRedshiftCluster_pause PKG=redshift
+
+make test TESTS=TestAccRedshiftCluster_basic
+make test TESTS=TestAccRedshiftCluster_basic PKG=redshift TESTARGS=-short
+```
+
+TestAccRedshiftClusterDataSource_vpc
+TestAccRedshiftCluster_changeAvailabilityZone
