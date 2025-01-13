@@ -29,6 +29,7 @@ aws redshift delete-cluster --cluster-identifier tf-redshift-cluster
 aws redshift create-cluster-snapshot --cluster-identifier tf-acc-test-xxxx --snapshot-identifier tf-issue727999
 aws redshift delete-cluster --skip-final-cluster-snapshot --cluster-identifier tf-acc-test-xxxx
 
+ls -la $GOPATH/bin/terraform-provider-aws
 ```
 
 Run tests
