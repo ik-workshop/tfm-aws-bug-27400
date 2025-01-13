@@ -5,7 +5,7 @@ provider_installation {
   # verifications for this provider and forces Terraform to look for the
   # null provider plugin in the given directory.
   dev_overrides {
-    "hashicorp/aws" = "/Users/ik/.gvm/pkgsets/go1.22.0/global/bin/"
+    "hashicorp/aws" = "$(ls -la $GOPATH/bin/terraform-provider-aws)"
   }
 
   # For all other providers, install them directly from their origin provider
