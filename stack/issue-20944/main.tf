@@ -8,6 +8,6 @@ resource "aws_redshift_cluster" "this" {
   master_password    = "Mustbe8characters"
   node_type          = "dc2.large"
   # values we are after
-  cluster_type       = "multi-node" # this should fail as it is not supported to configure cluster-type and number_of_nodes together
+  cluster_type       = "multi-node" #
   number_of_nodes    = 2
 }

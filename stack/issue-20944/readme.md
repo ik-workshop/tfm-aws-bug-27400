@@ -12,6 +12,7 @@
 
 - [issue link](https://github.com/hashicorp/terraform-provider-aws/issues/20944)
 - [aws sdk](https://docs.aws.amazon.com/cli/latest/reference/redshift/create-cluster-snapshot.html)
+- [aws docs for API](https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateCluster.html)
 
 ## Documentation
 
@@ -44,6 +45,3 @@ make testacc TESTS=TestAccRedshiftCluster_pause PKG=redshift
 make test TESTS=TestAccRedshiftCluster_basic
 make test TESTS=TestAccRedshiftCluster_basic PKG=redshift TESTARGS=-short
 ```
-
-TestAccRedshiftClusterDataSource_vpc
-TestAccRedshiftCluster_changeAvailabilityZone
